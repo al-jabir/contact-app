@@ -7,13 +7,13 @@ class AddContact extends Component {
   };
   add = (e) => {
     e.preventDefault();
-    if (this.state.name === "" && this.state.email === "") {
+    if (this.state.name === "" || this.state.email === "") {
       alert("All the fields are madatory!");
       return;
     }
 
     this.props.contactHandler(this.state);
-    console.log(this.state);
+    this.setState({ name: "", email: "" });
   };
   render() {
     return (
