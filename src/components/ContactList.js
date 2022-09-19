@@ -1,5 +1,5 @@
-import React from "react";
-import ContactCard from "./ContactCard";
+import React from 'react';
+import ContactCard from './ContactCard';
 
 const ContactList = ({ contacts, getContactId }) => {
   const deleteItem = (id) => {
@@ -7,9 +7,9 @@ const ContactList = ({ contacts, getContactId }) => {
   };
   return (
     <div className="ui celled list">
-      {contacts.map((person, inx) => {
+      {contacts.map((person, idx) => {
         return (
-          <ContactCard person={person} key={inx} clickRemove={deleteItem} />
+          <ContactCard person={person} key={idx} clickRemove={deleteItem} />
         );
       })}
     </div>

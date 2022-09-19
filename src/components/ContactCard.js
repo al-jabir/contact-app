@@ -6,7 +6,7 @@ const ContactCard = ({ person, clickRemove }) => {
   return (
     <div className="item" key={id}>
       <img className="ui avatar image" src={user} alt="user" />
-      <div className="content" key={id}>
+      <div className="content">
         <div className="header">{name}</div>
         <div>{email}</div>
       </div>
