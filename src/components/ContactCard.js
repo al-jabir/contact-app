@@ -1,7 +1,7 @@
 import React from "react";
 import user from "../image/user.png";
 
-const ContactCard = ({ person }) => {
+const ContactCard = ({ person, clickRemove }) => {
   const { id, name, email } = person;
   return (
     <div className="item" key={id}>
@@ -13,6 +13,7 @@ const ContactCard = ({ person }) => {
       <i
         className="trash alternate outline icon"
         style={{ color: "purple", marginTop: "7px" }}
+        onClick={() => clickRemove(id)}
       ></i>
     </div>
   );
