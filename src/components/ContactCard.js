@@ -1,5 +1,5 @@
-import React from "react";
-import user from "../image/user.png";
+import React from 'react';
+import user from '../image/user.png';
 
 const ContactCard = ({ person, clickRemove }) => {
   const { id, name, email } = person;
@@ -12,8 +12,8 @@ const ContactCard = ({ person, clickRemove }) => {
       </div>
       <i
         className="trash alternate outline icon"
-        style={{ color: "purple", marginTop: "7px" }}
-        onClick={() => clickRemove(id)}
+        style={{ color: 'purple', marginTop: '7px' }}
+        onClick={() => clickRemove()}
       ></i>
     </div>
   );

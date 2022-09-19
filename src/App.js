@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
-import "./App.css";
-import AddContact from "./components/AddContact";
-import ContactList from "./components/ContactList";
-import Header from "./components/Header";
+import React, { useEffect, useState } from 'react';
+import './App.css';
+import AddContact from './components/AddContact';
+import ContactList from './components/ContactList';
+import Header from './components/Header';
 
 const App = () => {
-  const LOCAL_STORAGE_KEY = "contacts";
+  const LOCAL_STORAGE_KEY = 'contacts';
   const [contacts, setContacts] = useState([]);
   const onContactHanlde = (contact) => {
     setContacts([...contacts, contact]);
