@@ -1,0 +1,21 @@
+import React from "react";
+import user from "../image/user.png";
+
+const ContactCard = ({ person }) => {
+  const { id, name, email } = person;
+  return (
+    <div className="item" key={id}>
+      <img className="ui avatar image" src={user} alt="user" />
+      <div className="content" key={id}>
+        <div className="header">{name}</div>
+        <div>{email}</div>
+      </div>
+      <i
+        className="trash alternate outline icon"
+        style={{ color: "purple", marginTop: "7px" }}
+      ></i>
+    </div>
+  );
+};
+
+export default ContactCard;
